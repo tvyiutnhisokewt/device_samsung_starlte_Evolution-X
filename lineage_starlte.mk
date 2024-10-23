@@ -31,12 +31,14 @@ TARGET_SCREEN_WIDTH := 1440
 ## Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_USES_CUSTOM_GAPPS := true
+
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_starlte
+PRODUCT_NAME := starlte
 PRODUCT_DEVICE := starlte
-PRODUCT_BRAND := samsung
+PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SM-G960F
-PRODUCT_MANUFACTURER := samsung
+PRODUCT_MANUFACTURER := Samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
