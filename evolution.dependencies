@@ -2,6 +2,19 @@
     {
         "repository": "tvyiutnhisokewt/device_samsung_exynos9810-common_Evolution-X",
         "target_path": "device/samsung/exynos9810-common",
-        "remote": "github-non-los"
+        "remote": "github-non-los",
+        "branch": "lineage-22.1"
+    },
+    {
+        "repository": "tvyiutnhisokewt/proprietary_vendor_samsung_exynos9810-common",
+        "target_path": "vendor/samsung/exynos9810-common",
+        "remote": "github-non-los,
+        "branch": "lineage-22.1"
+    },
+    {
+        "repository": "tvyiutnhisokewt/proprietary_vendor_samsung_starlte",
+        "target_path": "vendor/samsung/starlte",
+        "remote": "github-non-los,
+        "branch": "lineage-22.1"
     }
 ]
