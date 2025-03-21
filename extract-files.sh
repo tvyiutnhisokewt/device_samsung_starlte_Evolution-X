@@ -13,13 +13,11 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed libshim_audioparams.so "${2}"
                 sed -i 's/str_parms_get_str/str_parms_get_mod/g' "${2}"
                 ;;
-        vendor/lib*/libkeymaster_helper_vendor.so)
-                "${PATCHELF}" --replace-needed libcrypto.so libcrypto-tm.so "${2}"
-                "${PATCHELF}" --add-needed libssl-tm.so "${2}"
-                "${PATCHELF}" --add-needed libshim_crypto.so "${2}"
-                ;;
         vendor/lib*/libwrappergps.so)
                 "${PATCHELF}" --replace-needed libvndsecril-client.so libsecril-client.so "${2}"
+                ;;
+        vendor/lib64/libkeymaster_helper_vendor.so)
+                "${PATCHELF}" --replace-needed libcrypto.so libcrypto-tm.so "${2}"
                 ;;
     esac
 }
