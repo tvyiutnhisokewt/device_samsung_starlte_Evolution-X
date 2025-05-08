@@ -31,7 +31,7 @@ TARGET_SCREEN_WIDTH := 1440
 ## Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-TARGET_USES_CUSTOM_GAPPS := true
+TARGET_USES_MINI_GAPPS := true
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := starlte
