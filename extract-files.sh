@@ -34,4 +34,4 @@ export DEVICE=starlte
 export DEVICE_COMMON=exynos9810-common
 export VENDOR=samsung
 
-"./device/${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+"../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
